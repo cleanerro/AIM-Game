@@ -34,13 +34,12 @@ board.addEventListener('click', event => {
 
 function setColor(element) {
     const index = Math.floor(Math.random() * colors.length)
-    const color = colors[index]
-    element.style.backgroundColor = color
+    element.style.backgroundColor = colors[index]
 
 }
 
 function startGame() {
-    setInterval(decreaseTidme, 1000)
+    setInterval(decreaseTime, 1000)
     createRandomCircle()
     setTime(time)
 }
